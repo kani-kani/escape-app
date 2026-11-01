@@ -5,7 +5,7 @@ import { type QuizData } from './type/quizType';
 export const loadQuizDataList = async (): Promise<QuizData[]> => {
   try {
     // GitHub Pages環境のベースURLに対応するため、相対パスでfetch
-    const response = await fetch('../../../public/quizzes1.csv');
+    const response = await fetch(`${import.meta.env.BASE_URL}quizzes1.csv`);
     if (!response.ok) {
       throw new Error(`CSVの取得に失敗しました: ${response.statusText}`);
     }
@@ -30,7 +30,7 @@ export const loadQuizDataList = async (): Promise<QuizData[]> => {
 
         // 画像名のパス構成。未記述なら undefined
         const imageName = row[2]?.trim();
-        const imagePath = imageName ? imageName : undefined;
+        const imagePath = imageName ? `${import.meta.env.BASE_URL}${imageName}` : undefined;
 
         return {
           id: row[0].trim(),

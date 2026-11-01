@@ -1,6 +1,6 @@
 # １枚絵謎解きスタンドアローンアプリ
 
-~~[デモサイトを見る（GitHub Pages）](https://github.io)~~
+[デモサイトを見る（GitHub Pages）](https://kani-kani.github.io/escape-app)
 
 ## 概要
 ブラウザ上で完結した謎解きアプリです
