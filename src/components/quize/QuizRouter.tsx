@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
-import Logout from '../Logout';
+// import Logout from '../Logout';
 import { QuizContainer } from './QuizContainer';
 import { type QuizData } from './type/quizType';
 
@@ -46,7 +46,7 @@ export const QuizRouter: React.FC<QuizRouterProps> = ({ quizList }) => {
 
       <QuizContainer quizData={currentQuiz} />
 
-      <Logout/>
+      {/* <Logout/> */}
     </div>
   );
 };

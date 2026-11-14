@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 
 import { type RootState } from '../app/store';
-import Logout from './Logout';
+// import Logout from './Logout';
 
  // 1ページあたりの表示件数
 const ITEMS_PER_PAGE = 20;
@@ -115,7 +115,7 @@ export default function MainPage() {
           </div>
         )}
       </div>
-      <Logout/>
+      {/* <Logout/> */}
     </div>
   );
 }
